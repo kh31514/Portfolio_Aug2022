@@ -1,0 +1,349 @@
+body {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  margin-top: 150px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+html {
+  scroll-padding-top: 135px;
+}
+
+#aboutMe, .fade {
+  margin-bottom: 10px;
+}
+
+/* ----------------- HEADER ----------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #D2ECFD;
+  height: 125px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.link {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  font-style: italic;
+  box-shadow: 5px 5px #D5D5D5;
+}
+
+.headerName {
+  font-size: 60px;
+  font-style: italic;
+}
+
+/* ----------------- ABOUT ME ----------------------- */
+
+h1 {
+  margin: 30px;
+  color: #4A4A4A;
+  font-size: 35px;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.box {
+  background-color: #EDF8FF;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.profilePic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.intro {
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+/* --------------- EXPERIENCE --------------------- */
+
+.container {
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  overflow-y: hidden;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+section {
+  min-width: 50%;
+  background-color: #EDF8FF;
+  scroll-snap-align: center;
+  padding: 30px;
+  border: 5px solid white;
+}
+
+.logo {
+  width: 200px;
+  height: 115px;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: top;
+  padding-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.locationAndDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #7d7d7d;
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+h3 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+h4 {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 15px;
+  color: #4A4A4A;
+}
+
+h5 {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+/*   margin-right: 10px; */
+}
+
+li {
+  font-size: 14px;
+  padding-top: 7px;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+/* --------------- EDUCATION --------------------- */
+
+.cornell {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+.edCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 30px;
+  padding: 15px;
+  background:#EDF8FF;
+  border-radius: 5px;
+  width: 625px;
+}
+
+.edInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.degreeGPA {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* --------------- COURSEWORK --------------------- */
+
+.select {
+  background-color: #F8FCFF;
+  border-style: none;
+  border-radius: 5px;
+  color: #4A4A4A;
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select:hover {
+  box-shadow: 5px 5px #E8E8E8;
+}
+
+.selected {
+  font-style: italic;
+  background-color: #EDF8FF;
+}
+
+.subjectContainer, .semesterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+.courseGroup {
+  background-color: #EDF8FF;
+  margin-left: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  padding: 15px;
+  width: 25%;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.subjectTitle, .semTitle {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.courseDetails {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+/* --------------- SKILLS & INTERESTS --------------------- */
+
+.interestContainer, .skillContainer {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hardBtn, .softBtn {
+  background-color: #EDF8FF;
+}
+
+.hardBtn:hover, .softBtn:hover {
+  box-shadow: none;
+  cursor: auto;
+}
+
+.interest, .skill {
+  background-color: #F8FCFF;
+  border-radius: 100px;
+  padding: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  background-color: #EDF8FF;
+  box-shadow: 5px 5px 10px #7d7d7d;
+}
+
+.softText {
+  color: #7d7d7d;
+  background-color: transparent;
+}
+
+.art {
+  text-decoration: none;
+  font-style: italic;
+  color: #7d7d7d;
+}
+
+.skillTypes {
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #D2ECFD;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.phonePara {
+  display: inline;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.footerName {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  margin-left: 5px;
+}
